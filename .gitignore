@@ -1,3 +1,5 @@
 /Banana.app/
 .*/
 __pycache__*/
+*.mov
+*.log
