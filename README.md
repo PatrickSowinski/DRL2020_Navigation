@@ -80,7 +80,13 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 ![Kernel][image2]
 
-## Was most of this README blatantly copied from Udacity's official repository, because most of the content would be basically the same anyways?
+## Getting started
 
-<p align="center">Yes.</p>
+1. Unpack the Banana.app file.
+
+2. Open the Navigation_train.ipynb notebook.
+
+3. Run the cells in the notebook to start the unity environment and initialize the DQN agent. You can train the agent, or you can skip to the end of the notebook to see a trained agent.
+
+4. Close the environment from within the notebook, after you're done.
 
