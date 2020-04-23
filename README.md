@@ -11,9 +11,35 @@ This repository contains material related to Udacity's [Deep Reinforcement Learn
 
 ## Table of Contents
 
-### Training notebook
+This repository contains the following files:
 
-## Dependencies
+- Navigation_train.ipynb: The jupyter notebook used for training the agent that solves this environment. The notebook can also be used to visualize the trained agent.
+
+- dqn_agent.py: Source code for the Deep Q-Network agent that solves the environment. Also contains the definition of the network model (layers, etc.) used for this agent.
+
+- checkpoint_solved.pth: Saved model weights (state dict) for the dqn agent.
+
+- Banana.app.zip: Compressed Unity environment that the agent runs in.
+
+- python/: Folder used for installing dependencies
+
+- Report.pdf: Report detailing how this project was completed.
+
+## The Environment
+
+The environment is implemented within Unity ML Agents. More info about these environments can be found [here](https://github.com/Unity-Technologies/ml-agents)
+
+In this case, a single agent has to navigate a square world (bounded by visible walls). The goal is collect as many yellow bananas as possible, while avoiding blue bananas. The bananas spawn at random locations. A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.
+
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions. Four discrete actions are available, corresponding to:
+•    0 - move forward.
+•    1 - move backward.
+•    2 - turn left.
+•    3 - turn right.
+
+The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
+
+## Installation
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
@@ -33,7 +59,7 @@ activate drlnd
 ```
 
 2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym. 
-(Actually, you can ignore these extra steps:
+(Usually, you can ignore these extra steps:
 - Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
 - Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 )
@@ -58,4 +84,3 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 <p align="center">Yes.</p>
 
-Video of success: https://youtu.be/QgCX-zGajT8
